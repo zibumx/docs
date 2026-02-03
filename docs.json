@@ -11,15 +11,16 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guías",
+        "tab": "Sobre V8",
+        "icon": "road",
+        "pages": [
+          "introduction"
+        ]
+      },
+      {
+        "tab": "Guías para la IA",
         "icon": "book-blank",
         "groups": [
-          {
-            "group": "Sobre V8",
-            "pages": [
-              "introduction"
-            ]
-          },
           {
             "group": "Getting started",
             "pages": [
