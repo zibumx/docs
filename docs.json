@@ -46,9 +46,15 @@
         ]
       },
       {
-        "tab": "Para IA",
+        "tab": "Para LLMs",
         "pages": [
-          "robots-txt"
+          "descripcion",
+          {
+            "group": "Menú e inventario",
+            "pages": [
+              "menu"
+            ]
+          }
         ]
       }
     ]
