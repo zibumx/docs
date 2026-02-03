@@ -9,48 +9,22 @@
   },
   "favicon": "/images/Frame.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Sobre V8",
-        "icon": "road",
+        "group": "Sobre V8",
         "pages": [
-          "introduction"
-        ]
-      },
-      {
-        "tab": "Guías para la IA",
-        "icon": "book-blank",
-        "groups": [
           {
-            "group": "Getting started",
+            "group": "Filosofía",
+            "icon": "road",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Conceptos",
+            "icon": "sitemap",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "ingredientes"
             ]
           }
         ]
