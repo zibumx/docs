@@ -12,19 +12,33 @@
     "groups": [
       {
         "group": "Sobre V8",
-        "pages": ["introduction", "concepts"]
+        "pages": [
+          "introduction",
+          "concepts"
+        ]
       },
       {
         "group": "Menú e Inventario",
-        "pages": ["products", "recipes", "ingredients", "inventory"]
+        "pages": [
+          "products",
+          "recipes",
+          "ingredients"
+        ]
       },
       {
         "group": "Operaciones",
-        "pages": ["pos", "kds", "shifts", "staff"]
+        "pages": [
+          "pos",
+          "kds",
+          "shifts",
+          "staff"
+        ]
       },
       {
         "group": "Administración",
-        "pages": ["analytics"]
+        "pages": [
+          "analytics"
+        ]
       }
     ]
   },

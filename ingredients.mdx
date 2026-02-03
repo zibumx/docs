@@ -1,6 +1,6 @@
 ---
-title: 'Ingredientes'
-description: 'Gestionando materias primas y preparaciones en V8.'
+title: "Ingredientes"
+description: "Gestionando materias primas y preparaciones en V8."
 ---
 
 # Ingredientes
@@ -11,8 +11,8 @@ Los ingredientes son el recurso fundamental de tu restaurante. Representan todo 
 
 V8 categoriza los ingredientes en dos tipos principales:
 
-1.  **Materias Primas**: Artículos comprados directamente a proveedores (ej. Frutas y Verduras, Carne, Productos Enlatados).
-2.  **Preps (Sub-recetas)**: Artículos que preparas internamente y que se utilizan como ingredientes en otros platillos (ej. Salsa Marinara, mezcla para hamburguesa, Masa de Pizza).
+1. **Materias Primas**: Artículos comprados directamente a proveedores (ej. Frutas y Verduras, Carne, Productos Enlatados).
+2. **Ingredientes Preparados**: Artículos que preparas internamente y que se utilizan como ingredientes en otros platillos (ej. Salsa Marinara, mezcla para hamburguesa, Masa de Pizza).
 
 ## Funciones Clave
 
@@ -21,6 +21,27 @@ V8 categoriza los ingredientes en dos tipos principales:
 Cada ingrediente tiene una unidad de seguimiento (ej. Kilogramos, Litros, Unidades).
 
 - **Conversión**: V8 maneja las conversiones automáticamente cuando es posible, pero es crucial establecer la unidad base correcta para el inventario.
+
+Actualmente, V8 soporta estas unidades de medida:
+
+<Tabs>
+  <Tab title="Unidades de masa">
+    - Gramo
+    - Kilogramo
+    - Onza
+    - Libra
+  </Tab>
+  <Tab title="Unidades de volumen">
+    - Mililitro
+    - Litro
+    - Cucharadita
+    - Cucharada
+    - Onza Líquida
+    - Taza
+    - Cuarto de galón
+    - Galón
+  </Tab>
+</Tabs>
 
 ### Stock y Alertas
 
@@ -35,13 +56,13 @@ Puedes definir una vida útil predeterminada para los ingredientes. Esto permite
 
 ### Costeo
 
-- **Costo Promedio**: El sistema calcula un costo promedio ponderado basado en tu historial de compras. Si compras tomates a $20/kg hoy y a $22/kg mañana, el sistema actualiza el costo del ingrediente para reflejar el valor real de tu stock actual.
+- **Costo Promedio**: El sistema calcula un costo promedio ponderado basado en tu historial de compras. **Si compras tomates a** **\$20/kg hoy, y a \$22/kg mañana,** el sistema actualiza el costo del ingrediente para reflejar el valor real de tu stock actual.
 
 ## Transacciones
 
 Cada cambio en el stock de un ingrediente se registra como una transacción:
 
 - **Compra**: Agregar stock desde una factura de proveedor.
-- **Usage**: Deducción automática cuando se vende una receta que utiliza el ingrediente.
-- **Waste**: Registro manual de artículos en mal estado o dañados.
-- **Adjustment**: Correcciones realizadas después de un conteo físico de stock.
+- **Uso**: Deducción automática cuando se vende una receta que utiliza el ingrediente.
+- **Desperdicio**: Registro manual de artículos en mal estado o dañados.
+- **Ajuste**: Correcciones realizadas después de un conteo físico de stock.

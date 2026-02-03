@@ -1,11 +1,11 @@
 ---
-title: 'Conceptos Clave'
-description: 'Entendiendo los bloques fundamentales de Zibu Restaurant Software (V8).'
+title: "Conceptos Clave"
+description: "Entendiendo los bloques fundamentales de V8."
 ---
 
 # Introducción
 
-Zibu Restaurant Software (V8) es un sistema operativo integral diseñado para simplificar la complejidad de operar un restaurante. A diferencia de los sistemas de punto de venta (POS) tradicionales que solo registran ventas, V8 integra toda tu operación: desde el servicio frente al cliente hasta el inventario en cocina y el análisis financiero.
+V8 es un sistema integral diseñado para simplificar la complejidad de operar un restaurante. A diferencia de los sistemas de punto de venta (POS) tradicionales que solo registran ventas, V8 integra toda tu operación: desde el servicio frente al cliente hasta el inventario en cocina y el análisis financiero.
 
 Esta guía explica los conceptos centrales y la terminología utilizada en el sistema para ayudarte a comenzar.
 
@@ -17,31 +17,23 @@ Para rastrear costos e inventario con precisión otorgándote flexibilidad en la
 
 Los **Ingredientes** son las materias primas que compras a tus proveedores. Son los bloques de construcción de tu cocina.
 
-- **Ejemplos**: Kilo de harina, Litro de leche, Lata de refresco.
+- **Ejemplos**: Kilo de harina, Litro de leche, Lata de refresco, Litro de salsa.
 - **Uso**: Rastreas niveles de stock, costos de compra y fechas de caducidad de los ingredientes.
 
-### Recetas
+### Recetas y productos
 
-Las **Recetas** definen cómo se combinan los Ingredientes. Una receta no solo enumera los ingredientes; incluye las cantidades específicas y los pasos detallados de preparación.
+Las **Recetas y productos** definen cómo se combinan los Ingredientes. Una receta no solo enumera los ingredientes; incluye las cantidades específicas y los pasos detallados de preparación.
 
 - **Uso**: Las recetas se utilizan para calcular el _costo teórico_ de tus platillos y para descontar la cantidad correcta de inventario cuando se vende un producto.
-
-### Productos
-
-Los **Productos** son los artículos que aparecen en tu menú y se venden a los clientes a través del POS.
-
-- **Vínculo con Recetas**: Un Producto está vinculado a una Receta. Cuando vendes 1 "Producto Hamburguesa", el sistema consulta la "Receta de Hamburguesa" y descuenta automáticamente el pan, la carne y los condimentos correspondientes de tu inventario de **Ingredientes**.
-- **Flexibilidad**: Puedes tener múltiples productos que apunten a la misma receta (ej. "Hamburguesa Especial de Comida" y "Hamburguesa a la Carta") con diferentes precios.
+- **En cada receta puedes agregar ingredientes o incluso otras recetas.**
+- **Las recetas también pueden ser un producto. **A diferencia de la mayoría de los softwares que separan recetas de productos, en V8 cada receta se puede configurar para ser un producto que vendes en tu menú, haciendo todo mas simple.
+- **Las recetas pueden tener opciones. **Cuando una receta también es marcada como un producto, puedes agregar sets de opciones a la receta, como Tamaño o Sabor. Cada opción puede ser configurada con el precio y los ingredientes que usa para mantener un trackeo de inventario impecable.
 
 ## Operaciones y POS
 
 ### Punto de Venta (POS)
 
 El **POS** es la interfaz que utiliza tu personal para tomar pedidos. Está diseñado para ser rápido y sencillo.
-
-- **Pedidos**: Un pedido consiste en múltiples productos seleccionados por un cliente.
-- **Mesas**: Para el servicio en comedor, los pedidos se asignan a Mesas.
-- **Modificadores**: Los productos pueden tener modificadores (ej. "Sin Cebolla", "Extra Queso") que también pueden ajustar el uso de inventario.
 
 ### Sistema de Pantalla de Cocina (KDS)
 
@@ -53,7 +45,7 @@ El **KDS** reemplaza las impresoras de cocina tradicionales. Los pedidos realiza
 
 V8 rastrea el inventario en tiempo real basado en las ventas.
 
-- **Teórico vs. Real**: El sistema calcula cuánto inventario _debería_ haber basándose en las ventas (Teórico). Realizas conteos de stock regulares para verificar el inventario físico _real_.
+- **Inventario Teórico**: El sistema calcula cuánto inventario _debería_ haber basándose en las ventas (Teórico). Cada mes, debes realizar conteos de stock regulares para verificar el inventario físico _real_.
 - **Variación**: La diferencia entre el inventario Teórico y el Real resalta desperdicios, robos o porciones excesivas.
 
 ### Turnos y Control de Caja
@@ -70,7 +62,6 @@ Un **Turno** representa un período de trabajo para una caja registradora o miem
 Tu **Equipo** representa a todos los empleados con acceso al sistema.
 
 - **Roles y Permisos**: El acceso se controla mediante roles (ej. Mesero, Gerente, Admin). Esto asegura que el personal solo vea la información relevante para su trabajo.
-- **Desempeño**: El sistema rastrea el desempeño de ventas por cada miembro del equipo, ayudándote a identificar a los mejores elementos.
 
 ## Análisis y Finanzas
 
@@ -80,4 +71,4 @@ Debido a que V8 conoce tus ventas (Ingresos) y tus costos de receta (COGS - Cost
 
 ### Clientes
 
-El sistema construye un **Perfil de Huésped Unificado** para tus clientes. Al rastrear el historial de pedidos y preferencias, puedes brindar un servicio personalizado y obtener información de marketing útil.
+El sistema construye un **Perfil de Cliente Unificado** para tus clientes. Al rastrear el historial de pedidos y preferencias, puedes brindar un servicio personalizado y obtener información de marketing útil.
