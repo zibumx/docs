@@ -1,0 +1,43 @@
+---
+title: 'Recetas'
+description: 'Construyendo tu menú y calculando costos.'
+---
+
+# Recetas
+
+Una Receta en V8 es el plano maestro para tu comida y bebida. Conecta la realidad financiera de tu cocina (Costos) con la realidad operativa (Preparación).
+
+## Anatomía de una Receta
+
+Una Receta consiste en:
+
+- **Nombre y Descripción**: Identificadores para la cocina y el personal.
+- **Ingredientes**: Una lista de materias primas o preparaciones necesarias para elaborar el platillo.
+- **Cantidades**: Cantidades precisas de cada ingrediente (ej. 150g de Harina, 2 Huevos).
+- **Instrucciones**: Pasos para la preparación (opcional pero recomendado para mantener la consistencia).
+
+## Costeo y Rentabilidad
+
+La función más potente del sistema de recetas de V8 es el motor de costeo en tiempo real.
+
+### Costo Teórico
+
+El sistema calcula el costo de una receta sumando los costos de todos sus ingredientes.
+
+- **Ejemplo**: Si una receta de Hamburguesa utiliza $5 de carne, $1 de pan y $0.50 de salsa, el Costo de la Receta es $6.50.
+
+### Actualizaciones Dinámicas
+
+Debido a que los costos de los Ingredientes se actualizan con cada compra, los costos de tus Recetas se actualizan automáticamente. No necesitas recalcular manualmente los costos del menú cuando los precios de los proveedores cambian; V8 te informa de inmediato si tus márgenes se están reduciendo.
+
+## Sub-Recetas (Preps)
+
+Los platillos complejos a menudo utilizan "Preps" (Ingredientes Intermedios).
+
+- **Escenario**: Preparas una olla de Salsa Marinara (Prep) para usar en Pasta y Pizza.
+- **Flujo de trabajo**:
+  1.  Creas una Receta para "Salsa Marinara".
+  2.  El resultado de esta receta se convierte en el Ingrediente "Salsa Marinara".
+  3.  Utilizas el Ingrediente "Salsa Marinara" en la receta de "Pizza Pepperoni".
+
+Esta estructura jerárquica permite un costeo preciso incluso en cocinas complejas.

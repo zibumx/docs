@@ -1,0 +1,83 @@
+---
+title: 'Conceptos Clave'
+description: 'Entendiendo los bloques fundamentales de Zibu Restaurant Software (V8).'
+---
+
+# Introducción
+
+Zibu Restaurant Software (V8) es un sistema operativo integral diseñado para simplificar la complejidad de operar un restaurante. A diferencia de los sistemas de punto de venta (POS) tradicionales que solo registran ventas, V8 integra toda tu operación: desde el servicio frente al cliente hasta el inventario en cocina y el análisis financiero.
+
+Esta guía explica los conceptos centrales y la terminología utilizada en el sistema para ayudarte a comenzar.
+
+## La Arquitectura del Menú
+
+Para rastrear costos e inventario con precisión otorgándote flexibilidad en las ventas, V8 separa lo que _vendes_ de lo que _compras_.
+
+### Ingredientes
+
+Los **Ingredientes** son las materias primas que compras a tus proveedores. Son los bloques de construcción de tu cocina.
+
+- **Ejemplos**: Kilo de harina, Litro de leche, Lata de refresco.
+- **Uso**: Rastreas niveles de stock, costos de compra y fechas de caducidad de los ingredientes.
+
+### Recetas
+
+Las **Recetas** definen cómo se combinan los Ingredientes. Una receta no solo enumera los ingredientes; incluye las cantidades específicas y los pasos detallados de preparación.
+
+- **Uso**: Las recetas se utilizan para calcular el _costo teórico_ de tus platillos y para descontar la cantidad correcta de inventario cuando se vende un producto.
+
+### Productos
+
+Los **Productos** son los artículos que aparecen en tu menú y se venden a los clientes a través del POS.
+
+- **Vínculo con Recetas**: Un Producto está vinculado a una Receta. Cuando vendes 1 "Producto Hamburguesa", el sistema consulta la "Receta de Hamburguesa" y descuenta automáticamente el pan, la carne y los condimentos correspondientes de tu inventario de **Ingredientes**.
+- **Flexibilidad**: Puedes tener múltiples productos que apunten a la misma receta (ej. "Hamburguesa Especial de Comida" y "Hamburguesa a la Carta") con diferentes precios.
+
+## Operaciones y POS
+
+### Punto de Venta (POS)
+
+El **POS** es la interfaz que utiliza tu personal para tomar pedidos. Está diseñado para ser rápido y sencillo.
+
+- **Pedidos**: Un pedido consiste en múltiples productos seleccionados por un cliente.
+- **Mesas**: Para el servicio en comedor, los pedidos se asignan a Mesas.
+- **Modificadores**: Los productos pueden tener modificadores (ej. "Sin Cebolla", "Extra Queso") que también pueden ajustar el uso de inventario.
+
+### Sistema de Pantalla de Cocina (KDS)
+
+El **KDS** reemplaza las impresoras de cocina tradicionales. Los pedidos realizados en el POS aparecen instantáneamente en pantallas en la cocina, permitiendo a los chefs gestionar los tiempos de preparación y el estado del pedido (Pendiente, Preparando, Listo).
+
+## Inventario y Back of House (BOH)
+
+### Gestión de Inventarios
+
+V8 rastrea el inventario en tiempo real basado en las ventas.
+
+- **Teórico vs. Real**: El sistema calcula cuánto inventario _debería_ haber basándose en las ventas (Teórico). Realizas conteos de stock regulares para verificar el inventario físico _real_.
+- **Variación**: La diferencia entre el inventario Teórico y el Real resalta desperdicios, robos o porciones excesivas.
+
+### Turnos y Control de Caja
+
+Un **Turno** representa un período de trabajo para una caja registradora o miembro del personal específico.
+
+- **Apertura/Cierre**: El personal debe abrir un turno con un monto inicial de efectivo y cerrarlo contando el cajón de dinero.
+- **Movimientos de Efectivo**: Todas las entradas y salidas de efectivo durante el día se registran dentro del turno para asegurar que el conteo final coincida con el total esperado por el sistema.
+
+## Personas y Personal
+
+### Equipo (Crew)
+
+Tu **Equipo** representa a todos los empleados con acceso al sistema.
+
+- **Roles y Permisos**: El acceso se controla mediante roles (ej. Mesero, Gerente, Admin). Esto asegura que el personal solo vea la información relevante para su trabajo.
+- **Desempeño**: El sistema rastrea el desempeño de ventas por cada miembro del equipo, ayudándote a identificar a los mejores elementos.
+
+## Análisis y Finanzas
+
+### P&L en Tiempo Real (Estado de Resultados)
+
+Debido a que V8 conoce tus ventas (Ingresos) y tus costos de receta (COGS - Costo de Bienes Vendidos), puede generar un estado de ingresos en tiempo real. No tienes que esperar hasta fin de mes para saber si ganaste dinero hoy.
+
+### Clientes
+
+El sistema construye un **Perfil de Huésped Unificado** para tus clientes. Al rastrear el historial de pedidos y preferencias, puedes brindar un servicio personalizado y obtener información de marketing útil.

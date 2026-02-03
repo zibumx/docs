@@ -1,0 +1,36 @@
+---
+title: 'Turnos y Caja'
+description: 'Gestión de cajones de dinero y sesiones de personal.'
+---
+
+# Turnos
+
+Un Turno en V8 es una sesión segura para el manejo de dinero y pedidos. Una gestión estricta de los turnos es la clave para prevenir robos y discrepancias en efectivo.
+
+## El Ciclo de Vida del Turno
+
+### 1. Apertura de un Turno
+
+Antes de tomar cualquier pedido, un miembro del personal debe abrir un turno.
+
+- **Fondo Inicial (Float)**: El personal cuenta y declara el efectivo inicial en el cajón (ej. $200 en billetes pequeños).
+
+### 2. Durante el Turno
+
+El sistema rastrea cada centavo:
+
+- **Ventas en Efectivo**: Calculadas automáticamente a partir de los pedidos pagados.
+- **Entradas (Pay-Ins)**: Agregar efectivo al cajón (ej. para reponer caja chica).
+- **Salidas (Pay-Outs)**: Retirar efectivo (ej. pago a un proveedor, adelanto para comida del personal).
+
+### 3. Cierre de un Turno
+
+Al final del día o en el cambio de turno:
+
+- **Conteo Ciego**: Idealmente, el personal cuenta el dinero _sin_ ver lo que el sistema espera. Esto evita que se "ajusten" los números.
+- **Reporte de Variación**: El sistema compara el Conteo Físico contra el Monto Esperado. Cualquier diferencia (Faltante/Sobrante) se marca para revisión del gerente.
+
+## Seguridad
+
+- **Permisos**: Solo los gerentes autorizados pueden ver el monto de efectivo esperado o aprobar salidas de efectivo grandes.
+- **Registros (Logs)**: Cada acción (apertura, cierre, movimiento de efectivo) queda registrada con fecha, hora y vinculada al usuario.

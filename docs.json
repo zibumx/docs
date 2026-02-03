@@ -12,28 +12,25 @@
     "groups": [
       {
         "group": "Sobre V8",
-        "pages": [
-          {
-            "group": "Filosofía",
-            "icon": "road",
-            "pages": [
-              "introduction"
-            ]
-          },
-          {
-            "group": "Conceptos",
-            "icon": "sitemap",
-            "pages": [
-              "ingredientes"
-            ]
-          }
-        ]
+        "pages": ["introduction", "concepts"]
+      },
+      {
+        "group": "Menú e Inventario",
+        "pages": ["products", "recipes", "ingredients", "inventory"]
+      },
+      {
+        "group": "Operaciones",
+        "pages": ["pos", "kds", "shifts", "staff"]
+      },
+      {
+        "group": "Administración",
+        "pages": ["analytics"]
       }
     ]
   },
   "logo": {
-    "light": "/images/Frame 88.png",
-    "dark": "/images/Frame 88 (1).png"
+    "light": "/logo/logo-dark.png",
+    "dark": "/logo/logo-light.png"
   },
   "navbar": {
     "links": [
@@ -50,15 +47,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {

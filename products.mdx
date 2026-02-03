@@ -1,0 +1,33 @@
+---
+title: 'Productos'
+description: 'Vendiendo artículos en el POS.'
+---
+
+# Productos
+
+Mientras que las **Recetas** gestionan el costo interno y la composición, los **Productos** gestionan la venta externa y la presentación al cliente.
+
+En V8, un Producto es esencialmente una Receta que está marcada como "Para la Venta".
+
+## Producto vs. Receta
+
+- **Receta**: "¿Cómo lo preparo? ¿Cuánto cuesta?" (Back of House / Cocina)
+- **Producto**: "¿Cómo lo vendo? ¿Cuál es el precio?" (Front of House / POS)
+
+## Precios
+
+Tú estableces el **Precio Base** para el producto. Esto es lo que paga el cliente.
+
+- **Análisis de Margen**: Dado que el sistema conoce el Costo (de la Receta) y el Precio (del Producto), muestra tu porcentaje de Margen Bruto en tiempo real.
+
+## Opciones y Modificadores
+
+Los productos se pueden personalizar utilizando **Opciones** (a menudo llamados Modificadores).
+
+- **Elecciones**: Permite a los clientes personalizar su pedido (ej. "Término de la carne: Término medio", "Guarnición: Papas fritas o ensalada").
+- **Ventas Adicionales (Upsells)**: Las opciones pueden tener costos extra (ej. "Agregar Tocino +$1.50").
+- **Impacto en Inventario**: Las opciones están vinculadas a los ingredientes. Si un usuario selecciona "Agregar Tocino", el sistema descuenta automáticamente la porción de tocino del inventario.
+
+## Categorías
+
+Los productos se organizan en Categorías (ej. "Entradas", "Platos Fuertes", "Bebidas") para facilitar la navegación en la terminal del POS.
