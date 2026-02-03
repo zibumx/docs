@@ -44,6 +44,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Para IA",
+        "pages": [
+          "robots-txt"
+        ]
       }
     ]
   },
