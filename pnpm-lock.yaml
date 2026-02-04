@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      trieve-ts-sdk:
+        specifier: ^0.0.124
+        version: 0.0.124
+    devDependencies:
+      '@types/node':
+        specifier: ^25.2.0
+        version: 25.2.0
+
+packages:
+
+  '@types/node@25.2.0':
+    resolution: {integrity: sha512-DZ8VwRFUNzuqJ5khrvwMXHmvPe+zGayJhr2CDNiKB1WBE1ST8Djl00D0IC4vvNmHMdj6DlbYRIaFE7WHjlDl5w==}
+
+  trieve-ts-sdk@0.0.124:
+    resolution: {integrity: sha512-oIHuEA5lPE4C1EZGuKLbLlIWYtFCgnrP7Jsd57IhT41MOzzBl3ZqiCYwsUpsu9rPIfSJKa14kdledGOQvPDbKg==}
+
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
+snapshots:
+
+  '@types/node@25.2.0':
+    dependencies:
+      undici-types: 7.16.0
+
+  trieve-ts-sdk@0.0.124: {}
+
+  undici-types@7.16.0: {}
