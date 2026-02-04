@@ -16,31 +16,31 @@
           {
             "group": "Sobre V8",
             "pages": [
-              "introduction",
-              "concepts"
+              "h/sobre-v8/apertura",
+              "h/sobre-v8/conceptos"
             ]
           },
           {
             "group": "Menú e Inventario",
             "pages": [
-              "products",
-              "recipes",
-              "ingredients"
+              "h/mei/productos",
+              "h/mei/recetas",
+              "h/mei/ingredientes"
             ]
           },
           {
             "group": "Operaciones",
             "pages": [
-              "pos",
-              "kds",
-              "shifts",
-              "staff"
+              "h/opex/pos",
+              "h/opex/kds",
+              "h/opex/turnos",
+              "h/opex/staff"
             ]
           },
           {
             "group": "Administración",
             "pages": [
-              "analytics"
+              "h/opex/analytics"
             ]
           }
         ]
@@ -48,11 +48,11 @@
       {
         "tab": "Para LLMs",
         "pages": [
-          "descripcion",
+          "ai/descripcion",
           {
             "group": "Menú e inventario",
             "pages": [
-              "menu"
+              "ai/menu"
             ]
           }
         ]
