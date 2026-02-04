@@ -97,7 +97,7 @@
     "default": "system"
   },
   "background": {
-    "decoration": "windows",
+    "decoration": "gradient",
     "color": {
       "light": "#ffffff",
       "dark": "#000000"
@@ -121,5 +121,14 @@
   },
   "metadata": {
     "timestamp": false
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "thumbnails": {
+    "appearance": "dark"
   }
 }
