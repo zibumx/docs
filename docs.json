@@ -9,50 +9,66 @@
   },
   "favicon": "/images/Frame.svg",
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Para humanos",
-        "groups": [
+        "product": "V8",
+        "tabs": [
           {
-            "group": "Sobre V8",
-            "pages": [
-              "h/sobre-v8/apertura",
-              "h/sobre-v8/conceptos"
+            "tab": "Para humanos",
+            "groups": [
+              {
+                "group": "Sobre V8",
+                "pages": [
+                  "h/sobre-v8/apertura",
+                  "h/sobre-v8/conceptos"
+                ]
+              },
+              {
+                "group": "Menú e Inventario",
+                "pages": [
+                  "h/mei/productos",
+                  "h/mei/recetas",
+                  "h/mei/ingredientes"
+                ]
+              },
+              {
+                "group": "Operaciones",
+                "pages": [
+                  "h/opex/pos",
+                  "h/opex/kds",
+                  "h/opex/turnos",
+                  "h/opex/staff"
+                ]
+              },
+              {
+                "group": "Administración",
+                "pages": [
+                  "h/opex/analytics"
+                ]
+              }
             ]
           },
           {
-            "group": "Menú e Inventario",
+            "tab": "Para LLMs",
             "pages": [
-              "h/mei/productos",
-              "h/mei/recetas",
-              "h/mei/ingredientes"
-            ]
-          },
-          {
-            "group": "Operaciones",
-            "pages": [
-              "h/opex/pos",
-              "h/opex/kds",
-              "h/opex/turnos",
-              "h/opex/staff"
-            ]
-          },
-          {
-            "group": "Administración",
-            "pages": [
-              "h/opex/analytics"
+              "ai/descripcion",
+              {
+                "group": "Menú e inventario",
+                "pages": [
+                  "ai/menu"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Para LLMs",
-        "pages": [
-          "ai/descripcion",
+        "product": "Loop",
+        "tabs": [
           {
-            "group": "Menú e inventario",
+            "tab": "API",
             "pages": [
-              "ai/menu"
+              "untitled-page"
             ]
           }
         ]
